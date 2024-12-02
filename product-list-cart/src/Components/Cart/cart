@@ -1,0 +1,36 @@
+import cart from "../../assets/images/illustration-empty-cart.svg";
+import "./Cart.css";
+
+function Cart() {
+    return(
+        <aside className="side-bar">
+            <div className="cart">
+                <h4>Your Cart (<span className="quantity">0</span>)</h4>
+                <div className="empty">
+                    <img src={cart} alt="empty-cart" />
+                    <p>Your added items will appear here.</p>
+                </div>
+
+                <div className="cart-summary" style={{display: 'none'}}>
+                    <div className="total-div">
+                        <p>Order Total</p>
+                        <p className="cart-total">$0.00</p>
+                    </div>
+                    <p className="carbo-neutral"><img src="" alt="" />This is a carbo-neutral delivary</p>
+                    <button className="confirm-order">Confirm order</button>
+                </div>
+
+                <div className="overlay" style={{display: 'none'}}>
+                    <div className="final-summary">
+                        <img src="" alt="" />
+                        <h1>Order Confirmed</h1>
+                        <p className></p>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+    )
+}
+
+export default Cart

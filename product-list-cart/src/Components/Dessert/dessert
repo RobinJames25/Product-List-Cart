@@ -1,0 +1,156 @@
+import waffle1 from "../../assets/images/image-waffle-desktop.jpg";
+import waffle2 from "../../assets/images/image-waffle-tablet.jpg";
+import waffle3 from "../../assets/images/image-waffle-mobile.jpg";
+
+import creme1 from "../../assets/images/image-creme-brulee-desktop.jpg";
+import creme2 from "../../assets/images/image-creme-brulee-tablet.jpg";
+import creme3 from "../../assets/images/image-creme-brulee-mobile.jpg";
+
+import macaron1 from "../../assets/images/image-macaron-desktop.jpg";
+import macaron2 from "../../assets/images/image-macaron-tablet.jpg";
+import macaron3 from "../../assets/images/image-macaron-mobile.jpg";
+
+import tiramisu1 from "../../assets/images/image-tiramisu-desktop.jpg";
+import tiramisu2 from "../../assets/images/image-tiramisu-tablet.jpg";
+import tiramisu3 from "../../assets/images/image-tiramisu-mobile.jpg";
+
+import baklava1 from "../../assets/images/image-baklava-desktop.jpg";
+import baklava2 from "../../assets/images/image-baklava-tablet.jpg";
+import baklava3 from "../../assets/images/image-baklava-mobile.jpg";
+
+import meringue1 from "../../assets/images/image-meringue-desktop.jpg";
+import meringue2 from "../../assets/images/image-meringue-tablet.jpg";
+import meringue3 from "../../assets/images/image-meringue-mobile.jpg";
+
+import cake1 from "../../assets/images/image-cake-desktop.jpg";
+import cake2 from "../../assets/images/image-cake-tablet.jpg";
+import cake3 from "../../assets/images/image-cake-mobile.jpg";
+
+import brownie1 from "../../assets/images/image-brownie-desktop.jpg";
+import brownie2 from "../../assets/images/image-brownie-tablet.jpg";
+import brownie3 from "../../assets/images/image-brownie-mobile.jpg";
+
+import panna1 from "../../assets/images/image-panna-cotta-desktop.jpg";
+import panna2 from "../../assets/images/image-panna-cotta-tablet.jpg";
+import panna3 from "../../assets/images/image-panna-cotta-mobile.jpg";
+
+import "./Dessert.css"
+import Cart from "../Cart/Cart";
+import icon from "../../assets/images/icon-add-to-cart.svg";
+
+function Dessert() {
+    return (
+        <div className="main">
+            <div className="cont">
+            <h1>Desserts</h1>
+            <main>
+                    <div className="card-1">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={waffle3}/>
+                        <source media="(max-width: 1024px)" srcSet={waffle2}/>
+                            <img src={waffle1} alt="" className="img-1"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item"/>Add to Cart</button>
+                        <p>Waffle</p>
+                        <h2 className="text-1">Waffle with Berries</h2>
+                        <h3 className="text-2">$6.50</h3>
+                    </div>
+                    <div className="card-2">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={creme3}/>
+                        <source media="(max-width: 1024px)" srcSet={creme2}/>
+                            <img src={creme1} alt="" className="img-2"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Crème Brûlées</p>
+                        <h2 className="text-1">Vanilla Bean Crème Brûlées</h2>
+                        <h3 className="text-2">$7.00</h3>
+                    </div>
+                    <div className="card-3">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={macaron3}/>
+                        <source media="(max-width: 1024px)" srcSet={macaron2}/>
+                            <img src={macaron1} alt="" className="img-3"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Macaron</p>
+                        <h2 className="text-1">Macaron Mix of Five</h2>
+                        <h3 className="text-2">$8.00</h3>
+                    </div>
+                    <div className="card-4">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={tiramisu3}/>
+                        <source media="(max-width: 1024px)" srcSet={tiramisu2}/>
+                            <img src={tiramisu1} alt="" className="img-4"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Tiramisu</p>
+                        <h2 className="text-1">Classic Tiramisu</h2>
+                        <h3 className="text-2">$5.50</h3>
+                    </div>
+                    <div className="card-5">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={baklava3}/>
+                        <source media="(max-width: 1024px)" srcSet={baklava2}/>
+                            <img src={baklava1} alt="" className="img-5"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Baklava</p>
+                        <h2 className="text-1">Pistachio Baklava</h2>
+                        <h3 className="text-2">$4.50</h3>
+                    </div>
+                    <div className="card-6">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={meringue3}/>
+                        <source media="(max-width: 1024px)" srcSet={meringue2}/>
+                            <img src={meringue1} alt="" className="img-6"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Pie</p>
+                        <h2 className="text-1">Lemon Meringue Pie</h2>
+                        <h3 className="text-2">$5.00</h3>
+                    </div>
+                    <div className="card-7">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={cake3}/>
+                        <source media="(max-width: 1024px)" srcSet={cake2}/>
+                            <img src={cake1} alt="" className="img-7"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Cake</p>
+                        <h2 className="text-1">Red Velvet Cake</h2>
+                        <h3 className="text-2">$4.50</h3>
+                    </div>
+                    <div className="card-8">
+                        <picture>
+                        <source media="(max-width: 768px)" srcSet={brownie3}/>
+                        <source media="(max-width: 1024px)" srcSet={brownie2}/>
+                            <img src={brownie1} alt="" className="img-8"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Brownie</p>
+                        <h2 className="text-1">Salted Caramel Brownie</h2>
+                        <h3 className="text-2">$5.50</h3>
+                    </div>
+                    <div className="card-9">
+                        <picture>
+                            <source media="(max-width: 768px)" srcSet={panna3}/>
+                            <source media="(max-width: 1024px)" srcSet={panna2}/>
+                            <img src={panna1} alt="" className="img-9"/>
+                        </picture>
+                        <button className="add-to-cart"><img src={icon} alt="icon-add-item" />Add to Cart</button>
+                        <p>Panna Cotta</p>
+                        <h2 className="text-1">Vanilla Panna Cotta</h2>
+                        <h3 className="text-2">$6.50</h3>
+                    </div>
+                </main>
+            </div>
+
+            <div>
+                <Cart />
+            </div>
+            </div>
+    )
+}
+
+export default Dessert
