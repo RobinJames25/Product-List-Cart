@@ -1,12 +1,11 @@
-import React from "react"
-import Dessert from "./Components/Dessert/Desserts"
+import React from "react";
+import Desserts from "./Components/Dessert/Desserts";
 import "./App.css"
 
 function App () {
   return (
     <div>
-      <Dessert />
-
+      <Desserts />
     </div>
   )
 }
