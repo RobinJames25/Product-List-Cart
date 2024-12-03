@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/product-list-cart/static/css/main.762fc6ce.css",
+    "main.css": "/product-list-cart/static/css/main.92bc4ba4.css",
     "main.js": "/product-list-cart/static/js/main.719d8c28.js",
     "static/media/image-brownie-mobile.jpg": "/product-list-cart/static/media/image-brownie-mobile.6564c9386ac1853629a3.jpg",
     "static/media/image-tiramisu-mobile.jpg": "/product-list-cart/static/media/image-tiramisu-mobile.3f87f3464d3f223033fc.jpg",
@@ -34,11 +34,11 @@
     "static/media/icon-add-to-cart.svg": "/product-list-cart/static/media/icon-add-to-cart.12141fdf0da9c38c6421fe087a5b5125.svg",
     "static/media/icon-increment-quantity.svg": "/product-list-cart/static/media/icon-increment-quantity.198f568ac3a5878a42e68f03afb1837b.svg",
     "static/media/icon-decrement-quantity.svg": "/product-list-cart/static/media/icon-decrement-quantity.94e32888eee4ef88beccedc6f9534341.svg",
-    "main.762fc6ce.css.map": "/product-list-cart/static/css/main.762fc6ce.css.map",
+    "main.92bc4ba4.css.map": "/product-list-cart/static/css/main.92bc4ba4.css.map",
     "main.719d8c28.js.map": "/product-list-cart/static/js/main.719d8c28.js.map"
   },
   "entrypoints": [
-    "static/css/main.762fc6ce.css",
+    "static/css/main.92bc4ba4.css",
     "static/js/main.719d8c28.js"
   ]
 }
