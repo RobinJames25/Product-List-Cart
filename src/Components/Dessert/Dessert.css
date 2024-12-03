@@ -1,0 +1,146 @@
+.main-section {
+    flex: 2;
+}
+
+.cont {
+    padding: 3rem 2rem 2rem 5rem;
+    display: flex;
+}
+
+main {
+    gap: 10px;
+    display: grid;
+    margin-right: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.add-to-cart {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Red Hat Text", sans-serif;
+    border: 2px solid hsl(14, 25%, 72%);
+    z-index: 1;
+    margin-top: -25px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-to-cart:hover {
+    border-color: rgb(199, 58, 15);
+    color: rgb(199, 58, 15);
+}
+
+/* cards */
+.card {
+  margin-top: 2rem;
+  position: relative;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card p {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: hsl(12, 20%, 44%);
+    font-weight: 600;
+}
+
+/* images */
+.img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.img.active{
+    border: 2px solid hsl(14, 86%, 42%);
+}
+
+.counter {
+    position: relative;
+    transform: translateX(-50%);
+    display: none;
+    width: 42%;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    background-color: hsl(14, 86%, 42%);
+    left: 70px;
+    margin-top: -25px;
+}
+
+.counter span {
+    color: hsl(0, 0%, 100%);
+}
+
+.icon-decrement, .icon-increment {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.icon-decrement {
+    padding: 8px 5px;
+}
+
+.add-to-cart.behind {
+    position: relative;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .cont {
+        padding: 1rem 1.5rem;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cont {
+        padding-left: 0;
+        padding: 1rem 1.5rem;
+    }
+
+    main {
+        height: 100vh;
+        overflow-y: scroll;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+}
